@@ -19,10 +19,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #145bac; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #bd0cd1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #061f3c; /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ed0891; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ed08c7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #ffffff;
+  --background-color: #06e6fa;
   --surface-color: #ffffff;
 }
 
@@ -243,7 +243,7 @@ h6 {
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
-  font-family: var(--default-font);
+  font-family: "Curlz MT";
 }
 
 .header .logo span {
@@ -323,7 +323,7 @@ h6 {
     color: var(--nav-color);
     font-size: 19px;
     padding: 0 2px;
-    font-family: var(--nav-font);
+    font-family: cursive;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -331,6 +331,7 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
+    color: #e685b5;
   }
 
   .navmenu a i,
@@ -358,12 +359,13 @@ h6 {
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
+
   }
 
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: color-mix(in srgb, var(--nav-color) 80%, black 50%);
+    color: color-mix(in srgb, var(--nav-color) 80%, #07c9e3 50%);
   }
 
   .navmenu .dropdown ul {
@@ -809,15 +811,15 @@ section,
   margin: 0;
   font-size: 50px;
   font-weight: 600;
-  font-family: Arial,sans-serif;
+  font-family: "Curlz MT";
 }
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 5px 0 30px 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: Arial,sans-serif;
+  font-family: cursive;
 }
 
 .hero .btn-get-started {
@@ -863,9 +865,9 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-/*.hero .animated {*/
-/*  animation: up-down 2s ease-in-out infinite alternate-reverse both;*/
-/*}*/
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
 
 @media (max-width: 640px) {
   .hero h1 {
